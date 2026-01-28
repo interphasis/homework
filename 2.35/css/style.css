@@ -1,0 +1,17 @@
+table, tr, td, th , caption{
+   border: 1px solid black;
+   border-collapse: collapse;
+   text-align: center;
+}
+table {
+   font-size: 30px;
+}
+caption {
+   border-bottom: none;
+}
+.saturday{
+   color: red;
+}
+.sunday {
+   color: red;
+}
