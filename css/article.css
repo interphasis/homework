@@ -1,0 +1,62 @@
+html {
+   font-family: Ubuntu, sans-serif;
+}
+
+.wrapper {
+   max-width: 1220px;
+   margin: 0 auto;
+}
+
+img, video {
+   max-width: 1220px;
+   
+}
+
+img {
+  margin-top: 80px ;
+}
+
+h1 {
+   min-width: 719px;
+   font-weight: 600;
+   font-size: 48px;
+   line-height: 115%;
+   text-transform: uppercase;
+   margin-bottom: 40px;
+}
+
+h2 {
+   margin-bottom: 40px;
+   margin-top: 80px;
+min-width: 744px;
+   font-weight: 600;
+   font-size: 36px;
+   line-height: 115%;
+   text-transform: uppercase;
+}
+
+ul {
+
+   font-weight: 400;
+   font-size: 16px;
+   color: #535755;
+   line-height: 130%;
+   padding-left: 16px;
+}
+
+.sub {
+max-width: 1220px;
+   font-weight: 400;
+   font-size: 16px;
+   color: #535755;
+   line-height: 130%;
+}
+.sub-second {
+   max-width: 744px;
+}
+.sub-first {
+   margin-bottom: 10px;
+}
+.sub-last {
+   margin-top: 40px;
+}
