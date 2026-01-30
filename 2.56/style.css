@@ -1,0 +1,25 @@
+header {
+   width: 100%;
+}
+.header-container{
+   width: 1320px;
+   max-width: 1320px;
+   display: flex;
+   justify-content: space-between;
+   margin: 0 auto;
+   padding: 20px 20px;
+   align-items: center;
+   border-bottom: 1px solid hsl(0, 0%, 41%);
+}
+.one {
+   width: 30px;
+   height: 30px;
+   background-color: black;
+}
+.two {
+   display: flex;
+   gap: 40px;
+}
+.three {
+   text-decoration: none;
+}
