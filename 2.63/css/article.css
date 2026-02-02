@@ -1,0 +1,123 @@
+html {
+   font-family: Ubuntu, sans-serif;
+}
+
+.wrapper {
+   max-width: 1220px;
+   margin: 0 auto;
+}
+
+img, video {
+   max-width: 1220px;
+
+}
+
+.img-wrapper {
+   margin-top: 80px;
+}
+
+h1 {
+   min-width: 719px;
+   font-weight: 600;
+   font-size: 48px;
+   line-height: 115%;
+   text-transform: uppercase;
+   margin-bottom: 40px;
+}
+
+h2 {
+   margin-bottom: 40px;
+   margin-top: 80px;
+   min-width: 744px;
+   font-weight: 600;
+   font-size: 36px;
+   line-height: 115%;
+   text-transform: uppercase;
+}
+
+ul {
+
+   font-weight: 400;
+   font-size: 16px;
+   color: #535755;
+   line-height: 130%;
+   padding-left: 16px;
+}
+
+.sub {
+   max-width: 1220px;
+   font-weight: 400;
+   font-size: 16px;
+   color: #535755;
+   line-height: 130%;
+}
+
+.sub-second {
+   max-width: 744px;
+}
+
+.sub-first {
+   margin-bottom: 10px;
+}
+
+.sub-last {
+   margin-top: 40px;
+}
+
+.list li::marker {
+   color: aqua;
+}
+
+button {
+   padding: 0;
+   margin: 0;
+
+}
+
+.img-wrapper {
+   position: relative;
+}
+
+
+.img-wrapper::before {
+   content: "";
+   position: absolute;
+   background: url(../images/decor.svg) no-repeat;
+   width: 528px;
+   height: 48px;
+   z-index: -1;
+}
+
+.wrapper-first::before {
+   top: 100px;
+   left: -350px;
+
+}
+
+.wrapper-second {
+   position: relative;
+}
+
+.wrapper-second::before {
+
+   bottom: 136px;
+   right: -350px;
+}
+
+.button {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   display: flex;
+   width: 60px;
+   height: 60px;
+   justify-content: center;
+   align-items: center;
+   background-color: #3596ED;
+   border: none;
+   border-radius: 50%;
+   cursor: pointer;
+   position: absolute;
+   z-index: 1;
+   transform: translate(-50%, -50%);
+}
