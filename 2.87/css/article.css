@@ -1,0 +1,205 @@
+html {
+   font-family: Ubuntu, sans-serif;
+}
+
+.header-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   max-width: 1220px;
+   margin: 0 auto;
+   padding: 30px 0;
+   border-bottom: 1px solid #D3CBD9;
+   gap: 10px;
+}
+.phone {
+   text-align: right;
+}
+.phone-text {
+   font-style: Ubuntu, sans-serif;
+   font-weight: 300;
+   font-size: 14px;
+   letter-spacing: 0.04em;
+   color: #858E8A;
+   text-transform: uppercase;
+   text-align: right;
+   margin-bottom: 8px;
+}
+.phone-link {
+   font-style: Ubuntu, sans-serif;
+   font-weight: 500;
+font-size: 18px;
+color: black;
+text-decoration: none;
+}
+/*--------------------------------------------------------------------*/
+footer {
+   background: linear-gradient(90deg,
+         rgba(73, 169, 255, 0.2) 0%,
+         rgba(252, 124, 217, 0.2) 100%);
+   margin-top: auto;
+   text-align: center;
+   padding: 60px 0 40px;
+}
+.footer-top {
+   border-bottom: 1px solid #D3CBD9;
+}
+.footer-logo {
+   display: inline-block;
+   margin-bottom: 40px;
+}
+
+.list {
+   display: flex;
+   list-style: none;
+   justify-content: center;
+   align-items: center;
+   gap: 60px;
+   padding-bottom: 40px;
+}
+
+.footer-nav ul li a {
+   font-style: Ubuntu, sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 130%;
+   text-decoration: none;
+   color: #535755;
+}
+.footer-nav ul li a:hover {
+   color: violet;
+}
+.copyright {
+   font-style: Ubuntu, sans-serif;
+   font-weight: 400;
+font-size: 14px;
+letter-spacing: 0.04em;
+color: #858E8A;
+   margin-top: 40px;
+   margin-bottom: 0;
+}
+/*--------------------------------------------------------------------*/
+.wrapper {
+   max-width: 1220px;
+   margin: 0 auto;
+}
+
+img, video {
+   max-width: 1220px;
+
+}
+
+.img-wrapper {
+   margin-top: 80px;
+}
+
+h1 {
+   min-width: 719px;
+   font-weight: 600;
+   font-size: 48px;
+   line-height: 115%;
+   text-transform: uppercase;
+   margin-bottom: 40px;
+}
+
+h2 {
+   margin-bottom: 40px;
+   margin-top: 80px;
+   min-width: 744px;
+   font-weight: 600;
+   font-size: 36px;
+   line-height: 115%;
+   text-transform: uppercase;
+}
+
+ul {
+
+   font-weight: 400;
+   font-size: 16px;
+   color: #535755;
+   line-height: 130%;
+   padding-left: 16px;
+}
+
+.sub {
+   max-width: 1220px;
+   font-weight: 400;
+   font-size: 16px;
+   color: #535755;
+   line-height: 130%;
+}
+
+.sub-second {
+   max-width: 744px;
+}
+
+.sub-first {
+   margin-bottom: 10px;
+}
+
+.sub-last {
+   margin-top: 40px;
+}
+
+.list li::marker {
+   color: aqua;
+}
+
+button {
+   padding: 0;
+   margin: 0;
+
+}
+
+.img-wrapper {
+   position: relative;
+}
+
+
+.img-wrapper::before {
+   content: "";
+   position: absolute;
+   background: url(../images/decor.svg) no-repeat;
+   width: 528px;
+   height: 48px;
+   z-index: -1;
+}
+
+.wrapper-first::before {
+   top: 100px;
+   left: -350px;
+
+}
+
+.wrapper-second {
+   position: relative;
+}
+
+.wrapper-second::before {
+
+   bottom: 136px;
+   right: -350px;
+}
+
+.button {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   display: flex;
+   width: 60px;
+   height: 60px;
+   justify-content: center;
+   align-items: center;
+   background-color: #3596ED;
+   border: none;
+   border-radius: 50%;
+   cursor: pointer;
+   position: absolute;
+   z-index: 1;
+   transform: translate(-50%, -50%);
+   transition: all 0.2s;
+}
+.button:hover {
+   opacity: 0.78;
+    background-color: #3a76aa;
+}
