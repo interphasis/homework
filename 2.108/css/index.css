@@ -1,0 +1,578 @@
+html {
+   font-family: Ubuntu, sans-serif;
+}
+
+body {
+   display: flex;
+   flex-direction: column;
+   height: 100vh;
+}
+
+.wrapper {
+   max-width: 1220px;
+   margin: 0 auto;
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+/*--------------------------------------------------------------------*/
+.header__container {
+   padding: 0 15px;
+   position: relative;
+   max-width: 1250px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   max-width: 1220px;
+   margin: 0 auto;
+
+   border-bottom: 1px solid #d3cbd9;
+   gap: 10px;
+}
+
+.header__phone {
+   text-align: right;
+}
+
+.header__phone-text {
+   font-style: Ubuntu, sans-serif;
+   font-weight: 300;
+   font-size: 14px;
+   letter-spacing: 0.04em;
+   color: #858e8a;
+   text-transform: uppercase;
+   text-align: right;
+   margin-bottom: 8px;
+}
+
+.header__phone-link {
+   font-style: Ubuntu, sans-serif;
+   font-weight: 500;
+   font-size: 18px;
+   color: black;
+   text-decoration: none;
+}
+
+
+
+/*-------------------------------------------------------------------------------------*/
+.footer {
+   margin-top: auto;
+   background-image: linear-gradient(90deg,
+         rgba(73, 169, 255, 0.2) 0%,
+         rgba(252, 124, 217, 0.2) 100%);
+   text-align: center;
+}
+.footer__top {
+   max-width: 1250px;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+.footer__top {
+   border-bottom: 1px solid #D3CBD9;
+
+}
+
+.footer-logo {
+   display: inline-block;
+   margin-bottom: 40px;
+   padding-top: 60px;
+
+}
+
+.footer__nav .list {
+   display: flex;
+   list-style: none;
+   justify-content: center;
+   align-items: center;
+   gap: 60px;
+   padding-bottom: 40px;
+   margin: 0;
+}
+
+.footer__nav ul {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 60px;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+.footer__nav ul li a {
+   font-style: Ubuntu, sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 130%;
+   text-decoration: none;
+   color: #535755;
+}
+
+.footer__nav ul li a:hover {
+   color: violet;
+}
+
+.copyright {
+   font-style: Ubuntu, sans-serif;
+   font-weight: 400;
+   font-size: 14px;
+   letter-spacing: 0.04em;
+   color: #858E8A;
+   margin-top: 40px;
+   margin-bottom: 0;
+}
+
+
+
+/*-------------------------------------------------------------------------------------*/
+.hero {
+
+   margin-top: 80px;
+   position: relative;
+}
+
+.hero::after {
+   position: absolute;
+   content: '';
+   background: url(../images/decor-hero.svg) repeat-x;
+   width: 100%;
+   height: 48px;
+   z-index: -1;
+   top: 359px;
+}
+
+
+.hero__container {
+   padding: 0 15px;
+   position: relative;
+   max-width: 1250px;
+   margin: 0 auto;
+   display: flex;
+   gap: 28px;
+
+
+}
+
+.hero__left {
+   max-width: 492px;
+}
+
+.hero__right {
+   display: flex;
+   position: relative;
+   max-width: 700px;
+
+}
+
+.hero__right-text {
+   position: absolute;
+   top: 40px;
+   left: 50%;
+   transform: translateX(-50%);
+   max-width: 161px;
+   padding: 22px;
+   background: rgb(255 255 255 / 0.9);
+   border: 1px solid #535755;
+   text-align: center;
+}
+
+.hero__left-desc {
+   font-family: Oswald, sans-serif;
+   font-weight: 600;
+   font-size: 62px;
+   line-height: 115%;
+   text-transform: uppercase;
+}
+
+strong {
+   color: #3596ED;
+}
+.hero__right-img {
+       min-width: 0;
+       
+   }
+.hero__left-text {
+   font-family: Ubuntu, sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 130%;
+   color: #535755;
+   margin-bottom: 140px;
+   margin-top: 40px;
+
+}
+
+.hero__left-link {
+   display: block;
+    max-width: 270px;
+   font-family: Ubuntu, sans-serif;
+   padding: 19px 32px;
+   background-color: #3596ED;
+   font-weight: 500;
+   font-size: 15px;
+   line-height: 130%;
+   letter-spacing: 0.02em;
+   text-transform: uppercase;
+   text-align: center;
+   color: #fff;
+   text-decoration: none;
+}
+
+@media (width <=1440px) {
+.hero__left {
+   max-height: 513px;
+}
+   .hero__right-img {
+       flex: 1 1 0; 
+       max-height: 513px;
+   }
+   .hero__left-desc {
+      max-width: 492px;
+   }
+  
+}
+
+@media (width <=992px) {
+   .footer-nav .list {
+   gap: 50px;
+  }
+.hero::after {
+   display: none;
+}
+   .hero__container {
+      flex-direction: column;    
+      align-items: center;
+   }
+ .hero__left-link {
+      margin-right: auto;
+      margin-left: auto;
+   }
+  
+   .hero__left {
+      text-align: center;
+      max-width: 400px;
+      margin: 0 auto;
+   }
+   .hero__left-desc {
+      font-size: 51px;
+      margin-bottom: 30px;
+   }
+   .hero__left-text {
+      font-size: 13px;
+      margin-bottom: 100px;
+   }
+}
+@media (width <=768px) {
+   .list {
+      flex-direction: column;
+      gap: 25px;
+   }
+}
+@media (width <=576px) {
+   .hero {
+      margin-top: 60px;
+   }
+   .hero__left-desc {
+      font-size: 42px;
+      margin-bottom: 30px;
+   }
+   .hero__left {
+      max-width: 400px;  
+   }
+   .hero__right-text {
+      max-width: 142px;
+    padding: 10px;
+  
+   }
+}
+/*-------------------------------------------------------------------------------------*/
+.news {
+   
+   padding-top: 140px;
+   padding-bottom: 140px;
+}
+
+.news__wrapper {
+   padding: 0 15px;
+   
+   margin: 0 auto;
+}
+
+.news__wrapper-desc {
+   font-weight: 600;
+   font-size: 48px;
+   line-height: 115%;
+   text-transform: uppercase;
+   font-family: Oswald, sans-serif;
+   margin-bottom: 40px;
+}
+
+.news__container {
+
+   display: flex;
+   gap: 28px;
+}
+
+.news__article__header-img {
+   display: block;
+}
+.news__article {
+   overflow: hidden;
+   max-width: 284px;
+   border: 1px solid #D3CBD9;
+   max-width: 284px;
+   align-items: center;
+}
+
+.news__article__info-text {
+   margin-top: 8px;
+   max-width: 244px;
+
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 130%;
+   color: #2C332F;
+   font-family: Ubuntu, sans-serif;
+}
+
+.news__article__info-time {
+
+   font-weight: 300;
+   font-size: 14px;
+   letter-spacing: 0.04em;
+   text-transform: uppercase;
+   font-family: Ubuntu, sans-serif;
+   color: #858E8A;
+}
+
+.news__article__info {
+   padding: 20px 20px 12px;
+}
+
+.news__footer {
+   padding: 0 20px 20px;
+}
+
+.news__footer-link {
+   display: inline-flex;
+   gap: 8px;
+   align-items: center;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 130%;
+   color: #3596ED;
+   font-family: Ubuntu, sans-serif;
+   cursor: pointer;
+   text-decoration: none;
+}
+
+.news__footer-link::after {
+   content: "";
+   display: inline-block;
+   width: 22px;
+   height: 9px;
+   background: url(../images/arrow-right.svg);
+   transition: transform 0.2s;
+}
+
+.news__footer-link:hover::after {
+   transform: translateX(5px);
+}
+@media (width <=1249px) {
+
+   }
+@media (width <=992px) {
+   .news__article {
+      flex-basis: 50%;
+      max-width: 350px;
+   }
+    .news__article__header-img{
+      width: 100%;
+   }
+   .news__wrapper-desc {
+      text-align: center;
+      font-size: 45px;
+   }
+.news__container {
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 20px;
+}
+}
+@media (width <=768px) {
+
+   .news__article {
+   flex-basis: 100%;
+      max-width: 450px;
+   }
+}
+@media (width <=576px) {
+.news__wrapper-desc{
+   font-size: 30px;
+}
+   .news__article {
+   flex-basis: 100%;
+      max-width: 300px;
+   }
+}
+
+/*-------------------------------------------------------------------------------------*/
+
+.faq {
+   
+   padding-bottom: 140px;
+   position: relative;
+}
+
+.faq::before {
+   content: "";
+   position: absolute;
+   top: 215px;
+   z-index: -1;
+   width: calc(50% - 250px);
+   height: 48px;
+   background: url(../images/decor-hero.svg) repeat-x;
+
+}
+
+.faq__container {
+   
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+.faq__inner {
+   display: flex;
+   
+   gap: 28px;
+}
+.faq__inner-img {
+   height: 533.95px;
+}
+
+.faq__container-desc {
+   font-weight: 600;
+   font-size: 48px;
+   line-height: 115%;
+   text-transform: uppercase;
+   font-family: Oswald, sans-serif;
+   margin-top: 0;
+   margin-bottom: 40px;
+}
+
+.faq__inner__questions-item-question {
+   padding: 20px;
+   display: flex;
+   list-style: none;
+   align-items: center;
+   justify-content: space-between;
+   gap: 10px;
+   cursor: pointer;
+}
+
+.faq__inner__questions-item-question::after {
+   display: inline-block;
+   flex-shrink: 0;
+   margin-right: 20px;
+   content: "";
+   width: 17px;
+   height: 22px;
+   background: url(../images/arrow-faq.svg) no-repeat center / cover;
+}
+
+.faq__inner__questions-item-question:-webkit-details-marker {
+   display: none;
+}
+
+.faq__inner__questions-item {
+   border-block: 1px solid #D3CBD9;
+   margin-bottom: 19px;
+}
+.faq__inner__questions:last-child {
+   margin-bottom: 0;
+}
+
+.faq__inner__questions[open] .faq__inner__questions-item-question::after {
+   transform: rotate(180deg);
+}
+
+.faq__inner__questions-item-question {
+   font-family: Oswald, sans-serif;
+   font-weight: 500;
+   font-size: 24px;
+   line-height: 115%;
+   text-transform: uppercase;
+   color: #2C332F;
+}
+
+.faq__inner__questions-item-text {
+   margin: 0;
+   font-family: Ubuntu, sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 130%;
+   color: #535755;
+   padding: 0 20px 20px 20px;
+}
+@media (width <=1260px) {
+   .faq__inner {
+      display: flex;
+flex-direction: column-reverse;
+align-items: center;}
+.faq__container-desc{
+   text-align: center;
+}
+.faq__inner__questions-item-text {
+   display: inline-block;
+   max-width: 900px;
+}
+
+}
+@media (width <=1260px) {
+ .faq::before {
+      display: none;
+   }
+}
+@media (width <=992px) {
+    
+.faq__container-desc{
+   font-size: 45px;
+}
+.faq__inner__questions-item-question {
+   font-size: 22px;
+}
+}
+@media (width <=768px) {
+ 
+   .faq__container-desc{
+   margin-bottom: 30px;
+}
+.faq__inner__questions-item-text {
+   max-width: 500px;
+}
+.faq__inner__questions-item-question{
+   font-size: 20px;
+}
+}
+@media (width <=576px) {
+    .faq__container-desc{
+   margin-bottom: 20px;
+   font-size: 30px;
+}
+  .faq__inner__questions-item-text {
+   max-width: 340px;
+}
+.faq__inner__questions-item-question {
+   font-size: 18px;
+   max-width: 340px;
+}
+
+}
+
+/*------------------------------------------------------------------*/
