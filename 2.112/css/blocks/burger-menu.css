@@ -1,0 +1,24 @@
+@media (width > 768px) {
+  .header__burger {
+    display: none;
+  }
+}
+@media (width <= 768px) {
+  .header__burger {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    z-index: var(--layer-3);
+  }
+}
+.header__burger-icon ,
+.burger--open .header__closer-icon {
+    display: block;
+}
+.header__closer-icon,
+.burger--open .header__burger-icon {
+    display: none;
+}
