@@ -1,0 +1,58 @@
+.sale {
+    
+  position: fixed;
+  z-index: 3;
+  width: 100vw;
+  background-color: var(--second-color);
+}
+.sale_close {
+  display: none;
+}
+
+.sale__container {
+  display: flex;
+  align-items: center;
+  justify-content: center
+  /* 992-1440 
+  gap: clamp(82.5px, -402.56px + 48.90vw, 282px);*/
+  
+}
+.sale__text {
+  font-family: var(--font-family);
+  font-weight: 400;
+
+  color: #fff;
+}
+.sale__closer-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: self-end;
+}
+.sale__registration-link {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+.sale__link-connection {
+  display: flex;
+  padding-block: 10px;
+}
+@media (width > 992px) {
+
+  .sale__text,
+  .sale__registration-link {
+    font-size: 14px;
+  }
+}
+@media (width <= 992px) {
+    
+  .sale__text {
+    display: none;
+  }
+  .sale__registration-link {
+    font-size: 12px;
+    align-self: center;
+  }
+}
